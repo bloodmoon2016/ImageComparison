@@ -1,0 +1,29 @@
+// ImageComparison.idl : ImageComparison.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(ImageComparison.tlb)。
+
+[ uuid(20B13F0C-6993-47BE-AE1C-E42D28B074BA), version(1.0) ]
+library ImageComparison
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CImageComparisonDoc 的主调度接口
+	
+	[ uuid(5D2CAD12-44D1-4B35-A140-18671B6AA0D8) ]
+	dispinterface IImageComparison
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CImageComparisonDoc 的类信息
+	
+	[ uuid(8B6CCAD6-AA1E-430F-8394-94DB52B83850) ]
+	coclass ImageComparison
+	{
+		[default] dispinterface IImageComparison;
+	};
+};

@@ -1,0 +1,17 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则调用
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+
+HKEY_CLASSES_ROOT\ImageComparison.Application = ImageComparison Application
+
+
+HKEY_CLASSES_ROOT\ImageComparison.Application\CLSID = {8B6CCAD6-AA1E-430F-8394-94DB52B83850}
+
+HKEY_CLASSES_ROOT\CLSID\{8B6CCAD6-AA1E-430F-8394-94DB52B83850} = ImageComparison Application
+HKEY_CLASSES_ROOT\CLSID\{8B6CCAD6-AA1E-430F-8394-94DB52B83850}\ProgId = ImageComparison.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{8B6CCAD6-AA1E-430F-8394-94DB52B83850}\LocalServer32 = ImageComparison.EXE
